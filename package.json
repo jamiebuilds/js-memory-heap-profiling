@@ -6,7 +6,7 @@
   "author": "James Kyle <me@thejameskyle.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node --expose-gc index.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "memwatch-next": "^0.3.0"

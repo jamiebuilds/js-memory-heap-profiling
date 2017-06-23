@@ -1,12 +1,7 @@
 const memwatch = require('memwatch-next');
 
-if (typeof global.gc !== 'function') {
-  console.error('Must be run with `node --expose-gc`');
-  process.exit(1);
-}
-
 function record(count, fn) {
-  global.gc();
+  memwatch.gc();
   let hd = new memwatch.HeapDiff();
   let arr = new Array();
   for (let i = 0; i < count; i++) arr.push(fn());
