@@ -1,0 +1,14 @@
+{
+  "name": "js-memory-heap-profiling",
+  "private": true,
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "James Kyle <me@thejameskyle.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node --expose-gc index.js"
+  },
+  "dependencies": {
+    "memwatch-next": "^0.3.0"
+  }
+}
