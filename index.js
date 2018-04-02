@@ -60,18 +60,19 @@ function mapSet(map, i) { map.set(i, 0); }
 function setSet(set, i) { set.add(i); }
 
 record('10 item object', 100000, () => fill(10, new Object(), objSet));
-record('10 item array', 100000, () => fill(10, new Array(), arrSet));
-record('10 item map', 100000, () => fill(10, new Map(), mapSet));
-record('10 item set', 100000, () => fill(10, new Set(), setSet));
-
 record('100 item object', 10000, () => fill(100, new Object(), objSet));
-record('100 item array', 10000, () => fill(100, new Array(), arrSet));
-record('100 item map', 10000, () => fill(100, new Map(), mapSet));
-record('100 item set', 10000, () => fill(100, new Set(), setSet));
-
 record('1000 item object', 1000, () => fill(1000, new Object(), objSet));
+
+record('10 item array', 100000, () => fill(10, new Array(), arrSet));
+record('100 item array', 10000, () => fill(100, new Array(), arrSet));
 record('1000 item array', 1000, () => fill(1000, new Array(), arrSet));
+
+record('10 item map', 100000, () => fill(10, new Map(), mapSet));
+record('100 item map', 10000, () => fill(100, new Map(), mapSet));
 record('1000 item map', 1000, () => fill(1000, new Map(), mapSet));
+
+record('10 item set', 100000, () => fill(10, new Set(), setSet));
+record('100 item set', 10000, () => fill(100, new Set(), setSet));
 record('1000 item set', 1000, () => fill(1000, new Set(), setSet));
 
 function objDef(obj, i) {
