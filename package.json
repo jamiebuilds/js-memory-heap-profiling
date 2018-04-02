@@ -9,6 +9,7 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "memwatch-next": "^0.3.0"
+    "memwatch-next": "^0.3.0",
+    "pretty-bytes": "^4.0.2"
   }
 }
