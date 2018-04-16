@@ -27,6 +27,7 @@ function record(name, count, fn) {
   let diff = hd.end();
   let total = diff.change.size_bytes;
   console.log(row(name, prettyBytes(total / count), String(count), prettyBytes(total)));
+  return arr;
 }
 
 function fill(count, obj, fn) {
